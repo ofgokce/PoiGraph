@@ -18,7 +18,8 @@ let package = Package(
             name: "PoiGraph"),
         .testTarget(
             name: "PoiGraphTests",
-            dependencies: ["PoiGraph"]
+            dependencies: ["PoiGraph"],
+            resources: [.copy("Resources/PoiGraphTest.json")]
         ),
     ]
 )
